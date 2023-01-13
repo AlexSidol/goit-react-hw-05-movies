@@ -1,0 +1,14 @@
+.cast__list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-top: 3px solid #10374a;
+  box-shadow: #10374a;
+
+  padding: 20px 40px;
+}
+
+.cast__name {
+  font-size: 8px;
+  width: 100px;
+}
