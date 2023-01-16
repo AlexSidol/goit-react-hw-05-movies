@@ -12,7 +12,7 @@ export const useTrendingList = () => {
 };
 
 export const useMovieDetails = movieId => {
-  const [movieDetails, setMovieDetails] = useState([]);
+  const [movieDetails, setMovieDetails] = useState(null);
 
   useEffect(() => {
     API.getMovieDetails(movieId).then(ret => setMovieDetails(ret));

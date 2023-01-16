@@ -61,3 +61,9 @@ export const getMoviesReviews = async moviesId => {
     };
   });
 };
+
+export const getImg = src => {
+  return src
+    ? `https://image.tmdb.org/t/p/w500${src}`
+    : `https://upload.wikimedia.org/wikipedia/commons/c/c2/No_image_poster.png`;
+};

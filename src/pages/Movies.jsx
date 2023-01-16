@@ -10,7 +10,7 @@ const Movies = () => {
 
   const handleSubmit = evt => {
     evt.preventDefault();
-    setSearchParams({ query: evt.target[0].value });
+    setSearchParams({ query: evt.target.inputName.value });
 
     return;
   };
@@ -27,6 +27,7 @@ const Movies = () => {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
+          name="inputName"
           placeholder="Search..."
           autoComplete="off"
           autoFocus
